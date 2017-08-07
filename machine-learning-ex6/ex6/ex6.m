@@ -106,11 +106,11 @@ C = 1; sigma = 0.1;
 % faster. However, in practice, you will want to run the training to
 % convergence.
 %%%%%%% UPDATE
-%model= svmTrain(X, y, C, @(x1, x2) gaussianKernel(x1, x2, sigma)); 
-%visualizeBoundary(X, y, model);
+model= svmTrain(X, y, C, @(x1, x2) gaussianKernel(x1, x2, sigma)); 
+visualizeBoundary(X, y, model);
 
-%fprintf('Program paused. Press enter to continue.\n');
-%pause;
+fprintf('Program paused. Press enter to continue.\n');
+pause;
 
 %% =============== Part 6: Visualizing Dataset 3 ================
 %  The following code will load the next dataset into your environment and 
